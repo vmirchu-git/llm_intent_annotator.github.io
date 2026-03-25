@@ -3,9 +3,6 @@
 ---
 
 ## 🇬🇧 English version
-
-**Timeline:** August 2025 (1 week of active development, followed by iterative optimization during testing)  
-**Role:** Data Analyst / ML Developer — developed and optimized a tool for semi-automatic text classification using an LLM with annotation history storage and API load control.  
 **Tech stack:** Python • SQLite • Pandas • Asyncio • TQDM • LLM API (via LLMChecker) • Nest Asyncio • Argparse • OS/IO • SQL • Regular Expressions • Bash Arguments  
 
 ---
@@ -78,15 +75,6 @@ Before this project, text annotation for chatbot tools was semi-automated: Inten
 - 60–70% time savings on average.
 - Improved classification accuracy via second review without retraining the model.
 
----
-
-### Key Skills
-- ML tool optimization.
-- Asynchronous programming in Python.
-- LLM integration into workflows.
-- Flexible SQL data management.
-- Clean progress output handling.
-
 ### Data Pipeline
 
 ![Pipeline diagram](assets/pipeline_gb_version.png)
@@ -94,15 +82,12 @@ Before this project, text annotation for chatbot tools was semi-automated: Inten
 ---
 
 ## 🇷🇺 Русская версия
-
-**Таймлайн:** Август 2025 (1 неделя активной разработки + постепенная оптимизация в процессе тестов)  
-**Роль:** Data Analyst / ML Developer — разработка и оптимизация инструмента для полуавтоматической классификации текстов на основе LLM с хранением истории разметки и контролем нагрузки на API.  
 **Технологии:** Python • SQLite • Pandas • Asyncio • TQDM • LLM API (через LLMChecker) • Nest Asyncio • Argparse • OS/IO • SQL • Регулярные выражения • Bash-аргументы  
 
 ---
 
 ### Контекст
-До проекта разметка текстов для чат-бота происходила полуавтоматически: Intent Analysts читали и размечали тексты вручную, иногда с датасетами в 1000+ срабатываний. Это было ресурсозатратно и снижало эффективность команды.
+До проекта разметка текстов для чат-бота происходила полуавтоматически: интент аналитики читали и размечали тексты вручную, иногда с датасетами в 1000+ срабатываний. Это было ресурсозатратно и снижало эффективность команды.
 
 ---
 
@@ -124,7 +109,7 @@ Before this project, text annotation for chatbot tools was semi-automated: Inten
 
 ### Подход
 **План действий:**
-1. Добавить SQLite-хранилище.
+1. Добавить дополнительное хранилище.
 2. Реализовать ллм и промт.
 3. Фильтровать уже известные тексты перед отправкой в LLM.
 4. Добавить обработчик лимита токенов (пауза и продолжение).
@@ -158,25 +143,13 @@ Before this project, text annotation for chatbot tools was semi-automated: Inten
 - Чище и информативнее логи.
 - Полностью автономная работа даже при лимите токенов.
 
-**Побочные эффекты:**
-- SQLite-база может использоваться как готовый датасет для обучения других моделей.
-
 ---
 
 ### Бизнес-эффект
 - Больше автоматизации → экономия бюджета.
 - Быстрее обработка → раньше выход в прод.
 - Экономия 60–70% времени.
-- Рост точности без дообучения модели.
-
----
-
-### Ключевые навыки
-- Оптимизация ML-инструментов.
-- Асинхронное программирование.
-- Интеграция LLM.
-- Гибкое управление SQL.
-- Чистый контроль прогресса.
+- Рост точности.
 
 ### Пайплайн
 
